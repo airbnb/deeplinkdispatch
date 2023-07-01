@@ -29,6 +29,8 @@ public class SampleActivity extends Activity {
 }
 ```
 
+**Note:** Only the scheme, host and path elements of the URI are used for matching the incoming deeplink to the code. Query parameters or any other part of URI are not used for matching. Query parameters are handled and available in the deep link meta data, e.g. for [method call backs](README.md#query-parameters) or when [using handlers](https://github.com/airbnb/DeepLinkDispatch/edit/master/README.md#deeplinkhandler-annotations).
+
 ### Multiple Deep Links
 
 Sometimes you'll have an Activity that handles several kinds of deep links:
